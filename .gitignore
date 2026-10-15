@@ -1,0 +1,17 @@
+# .gitignore: lista lo que GIT no debe subir al repositorio 
+# cada linea  archivo es unacarpeta para ignorar 
+
+#paquetes descargardos por npm: pesan mucho 
+
+node_modules 
+
+#resultado de npm "run" build del fronet: esta se puede volver a genear 
+dist 
+
+# las fotos subidas por los usuario no se cargan o se ignoren 
+#el * significa "todo lo que haya dentro de uploads se va a ignorar "
+backend/uploads/*
+
+# Exepcion: el signo ! significa "esta LINEA si se sube"
+#Git no guarda carpetas vacias, solo archivos por eso dejamos dentro de las carptas uploads un archivo llamda .gitkeep 
+!backend/uploads/.gitkeep
